@@ -14,7 +14,7 @@ cd "$REPO_NAME"
 echo $(pwd)
 git fetch
 for a in $(git branch -r | grep origin | grep -v '>'); do git checkout --force --track "$a"; done
-git checkout develop
+git checkout master
 git reset --hard
 
 echo "Creating 7z archive"
